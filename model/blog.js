@@ -14,7 +14,7 @@ const blogSchema = mongoose.Schema(
         },
         isFavorited:{
             type:Boolean,
-            default: false,
+            default:false,
         },
         createdAt:{
             type:Date,
