@@ -12,10 +12,9 @@ const blogSchema = mongoose.Schema(
             required:true,
             maxLenght:50
         },
-        like:{
-            type:String,
-            required:true,
-            maxLenght:1,
+        isFavorited:{
+            type:Boolean,
+            default: false,
         },
         createdAt:{
             type:Date,
