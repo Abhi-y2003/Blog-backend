@@ -5,14 +5,13 @@ const router = express.Router();
 
 //importing Controller 
 const {createBlog} = require("../controller/createBlog");
-const {favBlog}  = require("../controller/favBlog");
-const {unFavBlog}  = require("../controller/unFavBlog")
+const {createComment} = require("../controller/comment");
+
 
 
 //define URL
 router.post("/createBlog", createBlog);
-router.put("/favBlog/:id", favBlog);
-router.put("/unFavBlog/:id", unFavBlog);
+router.post("comments/create", createComment);
 
 
 module.exports = router;
