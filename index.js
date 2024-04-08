@@ -14,7 +14,7 @@ app.use(express.json());
 const blogRoutes = require("./routes/blogs");
 
 //using this the api url is like localhost then the api/v1 then the blogroutes
-app.use("api/v1", blogRoutes);
+app.use("/api/v1", blogRoutes); 
 
 
 //starting server
